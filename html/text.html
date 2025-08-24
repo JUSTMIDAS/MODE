@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p-con Example</title>
+    <style>
+        /* Initial styles for .p-con */
+        .p-con {
+            width: 50vw; /* Initial width */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: lightgray;
+            transition: width 0.5s ease; /* Smooth transition when resizing */
+        }
+
+        /* Other styling */
+        .p-con-img img {
+            width: 100%;
+        }
+
+        .cart-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .p-con-enlarge {
+                width: 80vw !important; /* Set width to 80vw */
+            }
+    </style>
+</head>
+<body>
+
+    <div class="p-con">
+        <div class="p-con-img">
+            <img src="img/products/n5.jpg" alt="Product Image">
+        </div>
+        <div class="text">
+            <h6>adidas</h6>
+            <h3>Cartoon Astronaut T-shirt</h3>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="cart-price">
+                <p>$78</p>
+                <button><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // // Select the element with class 'p-con'
+        // const bigItems = document.querySelector('.p-con');
+
+        // // Add an event listener for the click event
+        // bigItems.addEventListener('click', function() {
+        //     bigItems.classList.add('p-con-enlarge'); // Add class to enlarge
+        // });
+
+        // // Define the class in CSS that sets the width to 80vw
+        // const style = document.createElement('style');
+        // style.innerHTML = `
+           
+        // `;
+        // document.head.appendChild(style);
+    </script>
+    <script type="module" src="../script/script.js"></script>
+
+</body>
+</html>

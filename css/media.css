@@ -1,0 +1,198 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background: #574AE2;
+        box-shadow: 0 40px 60px #000;
+        transition: all 0.3s linear;
+        padding-top: 4rem;
+    }
+
+    #navbar.active{
+        right: 0;
+    }
+ nav ul li {
+    margin-bottom: 1.2rem;
+ }
+ nav #mobile{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+#mobile a{
+  margin-right: 10px;
+  color: #574AE2;
+}
+ #navbar #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #124c79;
+    font-size: 1.7rem;
+}
+#cart{
+    display: block;
+    color: #000;
+}
+ main .text-box{
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    font-size: 0.8rem;
+    z-index: 1;
+    width: 50%;
+    margin: 0;
+}
+
+.fe-box-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 2rem;
+
+}
+    .fe-box {
+        width: 30%;
+        font-size: 0.5rem;
+
+        
+
+    }
+   
+    .img-box{
+         margin-left: 6rem; 
+    }
+   
+    .product .p-con-flex  {
+      justify-content: center;
+      align-items: center;
+        cursor: pointer;
+
+    
+    }
+    #banner, #banner button {
+       font-size: 0.7rem;
+       text-align: center;
+    }
+    #banner {
+        height: 100px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    
+#newsletter   {
+     font-size: 0.7rem;
+    
+}
+
+#newsletter .inputs {
+    width: 70vw;
+    height: 10vw;
+    background: white;
+}
+#newsletter .inputs input[type="email"]  {
+ width: 60%;
+ font-size: 0.7rem;
+}
+#newsletter .inputs input[type="submit"] {
+  
+    max-width: 30%;
+   padding: 0 1rem;
+   
+    font-size: 0.7rem;
+ height: 100%;
+    
+
+
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    
+.fe-box-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 2rem; 
+
+}
+    .fe-box {
+        width: 40%;
+        font-size: 0.5rem;
+
+    }
+    .fe-box p {
+        word-wrap: break-word;
+        font-size: 0.8rem;
+
+    } 
+    .p-con {
+        min-width: 25%;
+        flex-grow: 1;
+
+    }
+  
+    .f-col-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 80vw;
+    }
+
+    .f-col {
+        width: 30%;
+        font-size: 0.7rem;
+
+    }
+    #banners-stwo{
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+   
+    #banners-stwo .banner-box {
+        flex-grow: 3;
+        min-width: 100%;
+    }
+
+    .banner-box, .banner-box2{
+
+        font-size: 0.7rem;
+        padding-right: 5rem;
+    }
+    
+}

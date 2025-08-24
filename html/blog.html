@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Mode</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../media.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <style>
+        @keyframes shuffleCard {
+            0%, 10% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+
+            20% {
+                transform: translateY(400px) scale(0.8);
+                opacity: 0;
+                z-index: 0;
+            }
+
+            30%, 100% {
+                transform: translateY(0);
+                z-index: 5;
+            }
+        }
+
+        /* Styling for the updated #trend section */
+        #trend {
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        #trend h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #trend .trend-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        #trend .trend-item {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        #trend .trend-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #trend .trend-item h3 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #444;
+        }
+
+        #trend .trend-item p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        #trend .trend-item:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Styling for the unnamed section */
+        .explore-section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            text-align: center;
+            height: auto;
+        }
+
+        .explore-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .explore-section .explore-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .explore-section .explore-card {
+            width: 350px;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 15px;
+            text-align: left;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .explore-section .explore-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .explore-section .explore-card h3 {
+            font-size: 1.5rem;
+            color: #444;
+        }
+
+        .explore-section .explore-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .explore-section .explore-card a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #about-main{
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <span class>
+                <a href="index.html"> Mode</a>
+            </span>
+            <ul id="navbar">
+                <li><a class="" href="index.html">home</a></li>
+                <li><a class="" href="shop.html">shop</a></li>
+                <li><a class="active" href="blog.html">blog</a></li>
+                <li><a class="" href="about.html">about</a></li>
+                <li><a class="" href="contact.html">contact</a></li>
+                <a href="cart.html" class=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+            <div id="mobile">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main id="about-main">
+        <!-- Updated #trend section -->
+        <section id="trend">
+            <h2>Trending Now</h2>
+            <div class="trend-items">
+                <div class="trend-item">
+                    <img src="../img/t-shirts/f4.jpg" alt="Summer Dresses">
+                    <h3>Summer Dresses</h3>
+                    <p>Light and breezy dresses perfect for summer outings.</p>
+                </div>
+                <div class="trend-item">
+                    <img src="../img/trousrs/MEN BAGGY JEANS.webp" alt="Designer Sneakers">
+                    <h3>Designer pants</h3>
+                    <p>Stylish and comfortable trousers for casual wear.</p>
+                </div>
+                <div class="trend-item">
+                    <img src="../img/hoodies/W & B H.jpg" alt="Comfortable Tees">
+                    <h3>Comfortable Tees</h3>
+                    <p>Bring casual vibes to your wardrobe with soft tees.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated unnamed section -->
+        <section class="explore-section">
+            <h2>Explore More</h2>
+            <div class="explore-cards">
+                <div class="explore-card">
+                    <img src="../img/blog-post-1.jpg" alt="Sustainable Fashion">
+                    <h3>Sustainable Fashion</h3>
+                    <p>How fashion brands are embracing sustainability for a better world.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="explore-card">
+                    <img src="../img/blog-post-2.jpg" alt="The Art of Accessories">
+                    <h3>The Art of Accessories</h3>
+                    <p>Accessorize like a pro and transform your look effortlessly.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="explore-card">
+                    <img src="../img/blog-post-3.jpg" alt="Celebrity Styles">
+                    <h3>Celebrity Styles</h3>
+                    <p>Discover which celebrity styles are ruling this season.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keeping the card carousel section as it is you stole the code  -->
+        <section class="image-card-carousel"
+            style="position:relative;display:flex;justify-content:center;align-items:center;height:500px;background-color:#f8f8f8;overflow:hidden;">
+            <div class="card-stack"
+                style="position:relative;width:300px;height:400px;display:flex;justify-content:center;align-items:center;">
+                <div class="card"
+                    style="position:absolute;width:100%;height:100%;background-size:cover;background-position:center;border-radius:15px;box-shadow:0 6px 10px rgba(0,0,0,0.2);transition:transform 0.5s ease,opacity 0.5s ease;animation:shuffleCard 5s infinite;background-image:url(../img/hoodies/W\ &\ B\ H.jpg);z-index:5;">
+                </div>
+                <div class="card"
+                    style="position:absolute;width:100%;height:100%;background-size:cover;background-position:center;border-radius:15px;box-shadow:0 6px 10px rgba(0,0,0,0.2);transition:transform 0.5s ease,opacity 0.5s ease;animation:shuffleCard 5s infinite;background-image:url(../img/t-shirts/n5.jpg);z-index:4;">
+                </div>
+                <div class="card"
+                    style="position:absolute;width:100%;height:100%;background-size:cover;background-position:center;border-radius:15px;box-shadow:0 6px 10px rgba(0,0,0,0.2);transition:transform 0.5s ease,opacity 0.5s ease;animation:shuffleCard 5s infinite;background-image:url(../img/t-shirts/f8.jpg);z-index:3;">
+                </div>
+                <div class="card"
+                    style="position:absolute;width:100%;height:100%;background-size:cover;background-position:center;border-radius:15px;box-shadow:0 6px 10px rgba(0,0,0,0.2);transition:transform 0.5s ease,opacity 0.5s ease;animation:shuffleCard 5s infinite;background-image:url(../img/trousrs/MEN\ JOGGERS\ 1.webp);z-index:2;">
+                </div>
+                <div class="card"
+                    style="position:absolute;width:100%;height:100%;background-size:cover;background-position:center;border-radius:15px;box-shadow:0 6px 10px rgba(0,0,0,0.2);transition:transform 0.5s ease,opacity 0.5s ease;animation:shuffleCard 5s infinite;background-image:url('https://via.placeholder.com/300x400?text=Card+5');z-index:1;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h3>Stay in the Loop</h3>
+        <p>Subscribe to our newsletter for updates on the latest collections and exclusive deals.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h4>Quick Links</h4>
+        <div><a href="#">About Us</a><a href="#">Contact</a><a href="#">Privacy Policy</a></div>
+        <div>
+            <h4>Follow Us</h4><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i
+                    class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

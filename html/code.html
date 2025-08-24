@@ -1,0 +1,79 @@
+<main id="shop-main">
+    <h1>#stayhome</h1>
+    <p>save more on coupons and up to 70% off!</p>
+
+    <!-- Toggle Buttons -->
+    <div id="toggle-buttons">
+        <button id="tshirt-button" onclick="showTshirts()">T-shirts</button>
+        <button id="trouser-button" onclick="showTrousers()">Trousers</button>
+    </div>
+
+    <!-- T-shirts Section -->
+    <section class="product" id="tshirt-section">
+        <div class="p-con-flex">
+            <div class="p-con">
+                <div class="p-con-img" onclick="window.location.href='singleproduct.html';">
+                    <img src="img/products/tshirt1.jpg" alt="T-shirt 1">
+                </div>
+                <div class="text">
+                    <h6>Brand Name</h6>
+                    <h3>Stylish T-shirt 1</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="cart-price">
+                        <p>$25</p>
+                        <button><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more T-shirts here -->
+        </div>
+    </section>
+
+    <!-- Trousers Section -->
+    <section class="product" id="trouser-section" style="display: none;">
+        <div class="p-con-flex">
+            <div class="p-con">
+                <div class="p-con-img" onclick="window.location.href='singleproduct.html';">
+                    <img src="img/products/trouser1.jpg" alt="Trouser 1">
+                </div>
+                <div class="text">
+                    <h6>Brand Name</h6>
+                    <h3>Stylish Trouser 1</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="cart-price">
+                        <p>$40</p>
+                        <button><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more Trousers here -->
+        </div>
+    </section>
+</main>
+
+<script>
+    function showTshirts() {
+        document.getElementById('tshirt-section').style.display = 'block';
+        document.getElementById('trouser-section').style.display = 'none';
+    }
+
+    function showTrousers() {
+        document.getElementById('tshirt-section').style.display = 'none';
+        document.getElementById('trouser-section').style.display = 'block';
+    }
+
+    // Initialize to show T-shirts by default
+    showTshirts();
+</script>

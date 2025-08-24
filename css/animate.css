@@ -1,0 +1,21 @@
+
+
+
+
+@keyframes scaleImage {
+    0% {
+     /* Original size */
+      transform: perspective(400px);
+      transform: translateY(100px);
+      transform: translateX(-100px);
+      transform: scale(2);
+    }
+    /* 50% {
+      transform: scale(1.6); /* Scale to 150% 
+    } */
+    100% {
+      transform: scale(1); /* Back to original size */
+      transform: translateY(0px);
+      transform: translatex(0px);
+    }
+  }

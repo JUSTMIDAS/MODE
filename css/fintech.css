@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+header {
+    background: #0000002f;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+header div {
+    width: 200px;
+    text-align: center;
+
+}
+
+header div p {
+    font-size: 0.7rem;
+
+}
+
+
+main {
+    background: rgb(11, 153, 209);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-img {
+    width: 200px;
+    ,
+}
+
+.main-img img {
+    width: 100%;
+
+}
+
+.main-text {
+    margin-left: 2rem;
+    width: 300px;
+    color: #fff;
+
+}
+
+.main-text h1 {
+    text-transform: uppercase;
+
+}
+
+.main-text p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.main-text a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.main-text a:hover {
+    color: rgb(11, 153, 209);
+    font-size: 1.2rem;
+    text-shadow: 1px 3px 4px #000;
+
+}
+
+ button {
+    margin-bottom: 3rem;
+    border: none;
+    padding: 0.5rem;
+    color: rgb(11, 153, 209);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+ button:hover {
+    color: #fff;
+    background: #000;
+    font-size: 1.2rem;
+}
+
+section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    text-align: center;
+    padding: 3rem;
+    line-height: 4rem;
+
+
+}
+
+section h3 {
+    margin: 1rem;
+    text-transform: uppercase;
+
+
+}
+
+section p {
+    font-weight: 600;
+}
+
+section button {
+   border-color: rgb(11, 153, 209);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: rgb(11, 153, 209);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+.sectionb{
+    background: rgb(11, 153, 209);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+
+}
+.sectionb button{
+    border-color: rgb(11, 153, 209);
+}
+
+.div-img {
+    width: 30%;
+    text-align: center;
+    
+}
+
+.div-img img {
+    width: 15%;
+    border-radius: 50%;
+}
+.div-img p {
+margin-top: 0.6rem;
+font: 0.6rem sans-serif;
+}
+.div-img hr {
+     background: white;
+     height: 10px;
+     width: 200px;
+     margin: auto;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mode - Dedicated to delivering trendy fashion, sustainability, and customer-centric experiences. Discover our mission, vision, and journey.">
+    <meta name="keywords" content="about Mode, company story, fashion goals, sustainability, customer satisfaction">
+    <meta name="author" content="Mode">
+    <title>About Us | Mode</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" href="../css/style.css">
+    <style>
+      
+      
+        
+
+        section.about-us {
+            padding: 50px 20px;
+           
+        }
+
+        section.about-us h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        section.about-us p.header-desc {
+            color: #666;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section.about-us .content-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section.about-us .content-section h2 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        section.about-us .content-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        section.about-us .content-section ul {
+            list-style-type: disc;
+            margin: 10px 30px;
+            text-align: left;
+            color: #555;
+        }
+
+        section.about-us .content-section ul li {
+            margin-bottom: 10px;
+        }
+
+        section.testimonials {
+            padding: 50px;
+            background: white;
+            text-align: center;
+            color: #ff8c00;
+            margin-bottom: 2rem;
+        }   
+        
+
+        section.testimonials h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+       
+        /* Timeline Section */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .timeline-item {
+            background: #fff;
+            border-left: 5px solid #ff8c00;
+            padding: 15px 20px;
+            border-radius: 8px;
+            position: relative;
+            margin-left: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transform: translateX(100px);
+            opacity: 0;
+            animation: slideInFromLeft 0.8s forwards;
+        }
+
+        .timeline-item:nth-child(even) {
+            border-left-color: #1e90ff;
+        }
+
+        .timeline-item h3 {
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        .timeline-item p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 15px;
+            width: 12px;
+            height: 12px;
+            background: #333;
+            border-radius: 50%;
+        }
+
+        .counter-section {
+            margin: 50px 0;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            text-align: center;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .counter {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .counter h2 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            color: #ff8c00;
+        }
+
+        .counter p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader"
+        style="position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;display:flex;align-items:center;justify-content:center;z-index:1000;">
+        <div style="font-size:24px;font-weight:bold;color:#333;">Loading...</div>
+    </div>
+<!-- 
+    <header class="header">
+        <div class="logo"><a href="index.html">Mode</a></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="action-icons">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button id="dark-mode-toggle"><i class="fa-solid fa-moon"></i></button>
+        </div>
+        +
+    </header> -->
+    <header id="header">
+        <nav>
+
+            <span class>
+                <a href="index.html"> Mode</a>
+            </span>
+            <ul id="navbar">
+                <li><a class="" href="index.html">home</a></li>
+                <li><a class="" href="shop.html">shop</a></li>
+                <li><a class="" href="blog.html">blog</a></li>
+                <li><a class="active" href="about.html">about</a></li>
+                <li><a class="" href="contact.html"> contact</a></li>
+                <a href="cart.html" class="">
+                    <i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+
+            </ul>
+            <div id="mobile">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i></a>
+                <i id="bar" class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+
+
+    </header>
+    <main>
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h1>About Us</h1>
+            <p class="header-desc">Welcome to Mode, where fashion, sustainability, and individuality intersect to create
+                an exceptional shopping experience for you.</p>
+            <div class="content-section">
+                <h2>Our Story</h2>
+                <p>Founded in 2015, Mode started with a simple idea: making trendy and high-quality fashion accessible
+                    to all. Over the years, our dedication to excellence has gained us love and loyalty from
+                    fashion-forward customers worldwide. Mode has grown from a humble online boutique to a trusted name
+                    synonymous with elegance, inclusivity, and affordability.</p>
+            </div>
+            <div class="content-section">
+                <h2>Our Mission</h2>
+                <p>At Mode, we believe that fashion is a form of expression. Our mission is to empower every individual
+                    to express themselves boldly and authentically through clothing that bridges comfort with timeless
+                    designs.</p>
+            </div>
+            <div class="content-section">
+                <h2>Our Vision</h2>
+                <p>We envision a world where sustainable fashion is the norm, and all styles tell a unique story. Mode
+                    is committed to leading this change through innovation, creativity, and customer-first practices.
+                </p>
+            </div>
+            <div class="content-section">
+                <h2>Meet Our Team</h2>
+                <p>Behind Mode, there's a passionate and creative team of designers, strategists, and customer
+                    experience experts dedicated to bringing you the finest in fashion:</p>
+                <ul>
+                    <li><b>Creative Designers:</b> Industry experts creating unique collections.</li>
+                    <li><b>Customer Support Team:</b> Ensuring your experience is seamless 24/7.</li>
+                    <li><b>Brand Strategists:</b> Bringing the Mode vision to life globally.</li>
+                </ul>
+            </div>
+            <div class="content-section">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>Exclusive clothes collections with a modern twist.</li>
+                    <li>Unmatched quality and attention to detail.</li>
+                    <li>Affordable prices, sustainable practices, and exceptional service.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <p>"Mode has completely transformed my wardrobe! The quality is unmatched."</p>
+                    <h3>- Sarah T.</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Excellent service, exceptional choices. Highly recommend shopping here!"</p>
+                    <h3>- James B.</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Affordable yet trendy - Mode is my best find of the year!"</p>
+                    <h3>- Alice K.</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <section>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2015</h3>
+                <p>Mode was founded with the goal of making quality fashion affordable for everyone.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2017</h3>
+                <p>We launched our first eco-friendly collection, setting a new standard in sustainable clothing.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2021</h3>
+                <p>Recognized globally for our unique designs and commitment to customer satisfaction.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2023</h3>
+                <p>Expanded our operations to more than 50 countries, with over 10 million satisfied customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counters Section -->
+    <section class="counter-section">
+        <div class="counter">
+            <h2 id="customerCount">0</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="counter">
+            <h2 id="productsCount">0</h2>
+            <p>Products Sold</p>
+        </div>
+        <div class="counter">
+            <h2 id="countriesCount">0</h2>
+            <p>Countries Reached</p>
+        </div>
+    </section>
+    </main>
+
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h3>Stay in the Loop</h3>
+        <p>Subscribe to our newsletter for updates on the latest collections and exclusive deals.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h4>Quick Links</h4>
+        <div><a href="#">About Us</a><a href="#">Contact</a><a href="#">Privacy Policy</a></div>
+        <div>
+            <h4>Follow Us</h4><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i
+                    class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { const preloader = document.getElementById('preloader'); setTimeout(() => { preloader.style.display = 'none'; }, 1000); const darkModeToggle = document.getElementById('dark-mode-toggle'); darkModeToggle.addEventListener('click', () => { document.body.classList.toggle('dark-mode'); darkModeToggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>'; }); });
+        
+
+            /* Counter Animations */
+            const counters = document.querySelectorAll("h2[id]");
+            counters.forEach((counter) => {
+                counter.innerText = "0";
+                const updateCounter = () => {
+                    const target = +counter.getAttribute("data-target");
+                    const current = +counter.innerText;
+                    const increment = target / 200;
+                    if (current < target) {
+                        counter.innerText = `${Math.ceil(current + increment)}`;
+                        setTimeout(updateCounter, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+     
+    </script>
+</body>
+
+</html>
